@@ -10,7 +10,7 @@ This repository provides **ARM64/aarch64** builds of Harbor v2.14.2, enabling de
 
 ## 📦 Pre-built Images
 
-All 20 Harbor components are available as pre-built ARM64 images on GitHub Container Registry:
+All 10 Harbor components are available as pre-built ARM64 images on GitHub Container Registry:
 
 ```bash
 ghcr.io/retif/harbor/harbor-core-arm64:v2.14.2
@@ -20,7 +20,7 @@ ghcr.io/retif/harbor/harbor-db-arm64:v2.14.2
 ghcr.io/retif/harbor/registry-photon-arm64:v2.14.2
 ghcr.io/retif/harbor/harbor-registryctl-arm64:v2.14.2
 ghcr.io/retif/harbor/harbor-trivy-adapter-arm64:v2.14.2
-# ... and 13 more base images
+# See complete list in releases
 ```
 
 See [Releases](https://github.com/retif/harbor-arm/releases/tag/v2.14.2) for complete image list.
@@ -86,18 +86,18 @@ make -j4 build \
 **Registry (3):**
 - `registry-photon` (77 MB) - OCI image storage ⭐
 - `harbor-registryctl` (150 MB) - Registry controller ⭐
-- Plus 2 base images
+
 
 **Security (2):**
 - `harbor-trivy-adapter` (371 MB) - Vulnerability scanner ⭐
-- Plus 1 base image
+
 
 **Data (4):**
 - `harbor-db` (196 MB) - PostgreSQL 15
 - `harbor-log` (162 MB) - rsyslog
-- Plus 2 base images
 
-**Infrastructure (6 base images)**
+
+**Infrastructure**
 
 ⭐ = Compiled from source for ARM64
 
