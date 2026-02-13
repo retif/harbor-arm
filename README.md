@@ -13,13 +13,13 @@ This repository provides **ARM64/aarch64** builds of Harbor v2.14.2, enabling de
 All 20 Harbor components are available as pre-built ARM64 images on GitHub Container Registry:
 
 ```bash
-ghcr.io/retif/harbor-core:v2.14.2
-ghcr.io/retif/harbor-jobservice:v2.14.2
-ghcr.io/retif/harbor-portal:v2.14.2
-ghcr.io/retif/harbor-db:v2.14.2
-ghcr.io/retif/harbor-registry:v2.14.2
-ghcr.io/retif/harbor-registryctl:v2.14.2
-ghcr.io/retif/harbor-trivy-adapter:v2.14.2
+ghcr.io/retif/harbor/harbor-core-arm64:v2.14.2
+ghcr.io/retif/harbor/harbor-jobservice-arm64:v2.14.2
+ghcr.io/retif/harbor/harbor-portal-arm64:v2.14.2
+ghcr.io/retif/harbor/harbor-db-arm64:v2.14.2
+ghcr.io/retif/harbor/registry-photon-arm64:v2.14.2
+ghcr.io/retif/harbor/harbor-registryctl-arm64:v2.14.2
+ghcr.io/retif/harbor/harbor-trivy-adapter-arm64:v2.14.2
 # ... and 13 more base images
 ```
 
@@ -31,8 +31,8 @@ See [Releases](https://github.com/retif/harbor-arm/releases/tag/v2.14.2) for com
 
 ```bash
 # Pull images from GitHub Container Registry
-docker pull ghcr.io/retif/harbor-core:v2.14.2
-docker pull ghcr.io/retif/harbor-portal:v2.14.2
+docker pull ghcr.io/retif/harbor/harbor-core-arm64:v2.14.2
+docker pull ghcr.io/retif/harbor/harbor-portal-arm64:v2.14.2
 # ... (or use docker-compose/kubernetes to pull automatically)
 ```
 
